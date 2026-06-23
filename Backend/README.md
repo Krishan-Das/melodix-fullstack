@@ -1,0 +1,7 @@
+> Packages
+1. express
+2. mongoose
+3. dotenv
+4. cors
+5. jsonwebtoken
+6. bcrypt
