@@ -1,10 +1,10 @@
 const express = require("express")
 const cors = require("cors")
-const multer = require("multer")
 const cookieParser = require("cookie-parser")
 
-const uploadMusic = require("./services/ImageKit.service")
+
 const authRoutes = require("./routes/auth.routes")
+const musicRoutes = require("./routes/music.routes")
 
 
 const app = express() // instance.
@@ -13,21 +13,16 @@ const app = express() // instance.
 app.use(express.json());
 app.use(cors());
 app.use(cookieParser());
-const upload = multer(Storage = multer.memoryStorage());
 
 
 
 // (prefix, API's) ...
 app.use("/api/auth", authRoutes);
 
+app.use("/api/music", musicRoutes);
 
-// upload file (test)
-app.post("/music-post-create", upload.single("music"), (req, res)=>{
-  const file = req.file;
-  console.log(file);
-  
-  uploadMusic(file);
-})
+
+
 
 
 
