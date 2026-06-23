@@ -1,14 +1,15 @@
 > Packages
-1. express
-2. mongoose
+* express
+* mongoose
 
-3. dotenv
+* dotenv
 
 // middleware
-4. cors
-8. multer
+* cors
+* multer
+* cookie-parser
 
-5. jsonwebtoken
-6. bcrypt
+* jsonwebtoken
+* bcryptjs (not bcrypt)
 
-7. @imagekit/nodejs
+* @imagekit/nodejs
